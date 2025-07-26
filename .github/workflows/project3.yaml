@@ -14,9 +14,9 @@ jobs:
         runs-on: windows-latest
         steps:
           - name: Show windows OS
-            shell: pwsh
+            shell: bash
             run: |
-             echo "this job is running on an ubuntu runner."
+             echo "this job is running on an Windows runner."
              echo "Runner OS: $RUNNER_OS"
 
         
