@@ -1,0 +1,14 @@
+name: my third project
+
+on: push
+
+jobs:
+    ubuntu-echo:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Show OS
+          run: |
+            echo" this job is running on an ubuntu runner,"
+            echo "Running OS: $RUNNER_OS"
+
+        
