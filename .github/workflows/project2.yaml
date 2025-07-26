@@ -1,8 +1,9 @@
 name: my second project
 
 on: 
-    pull_request:
-    workflow_dispatch:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
     echo:
