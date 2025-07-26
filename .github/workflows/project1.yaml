@@ -1,6 +1,7 @@
 name: my first project
 
-on: push
+on:
+ workflow_dispatch:
 
 jobs:
     echo-hello:
