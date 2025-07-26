@@ -1,0 +1,19 @@
+name: my first project
+
+on: push
+
+jobs:
+    echo-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: ssay hellow
+              run: echo "hello, world"
+    echo-goodbye:
+        runs-on: ubuntu-latest
+        steps:
+            - name: failed step
+              run: |
+                 echo "I will Fail"
+                 exit 1
+            - name:  Say goodbye
+              run: echo "goodbye!"   
